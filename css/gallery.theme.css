@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+}
+
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* Backgrounds */
+.gallery .item.bg1 {
+  background: url("../images/bg1.jpg") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
+}
+.gallery .item.bg2 {
+  background: url("../images/bg2.jpg") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
+}
+.gallery .item.bg3 {
+  background: url("../images/bg3.jpg") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
+}
+
+/*
+	Theme controls how everything looks in Gallery CSS.
+*/
+.gallery {
+  position: relative;
+}
+.gallery .item {
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  background: #4d87e2;
+  margin: 0;
+}
+.gallery .controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 .02em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  transition: color .1s;
+}
+.secondary-controls {
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+}
+.grid, .small-grid {
+    font-family: Layout;
+    margin: 0 auto;
+    max-width: 1260px;
+    padding: 0 4%;
+}
+.grid > *, .small-grid > * {
+    font-family: sans-serif;
+}
+.small-grid {
+    max-width: 1008px;
+}
+.gallery header {
+    text-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+.gallery .custom-controls header {
+    font-size: 1.5em;
+    padding: 0 15%;
+}
+.gallery .secondary-controls a:nth-child(1) {
+    margin-left: 1em;
+}
+.gallery .secondary-controls a:nth-child(2) {
+    margin-right: 1em;
+}
+.gallery .introduction h1 {
+    font-size: 5em;
+}
+.gallery .introduction h2 {
+    font-size: 2em;
+}
+.main-module h1 {
+    font-size: 3em;
+}
+.main-module h2 {
+    font-size: 1.6em;
+}
+.getting-started .steps {
+    max-width: 60%;
+}
+.download-options .unprefixed img {
+    margin-left: -2em;
+}
+.download-options .prefixed, .download-options .unprefixed {
+    float: left;
+    width: 50%;
+}
+.screencast .learnings {
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+.screencast .learnings li {
+    width: 25%;
+}
+.screencast footer {
+    padding-top: 5em;
+}
+.quotes {
+    float: left;
+    width: 50%;
+}
+.purchase {
+    float: right;
+    max-width: 50%;
+}
+
+
+
+/* Secundary controls */
+
+.gallery .custom-controls header {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 0.7em;
+  margin: 20px auto 0;
+  padding: 1px 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 800px;
+  z-index: 10;
+}
+.gallery .control-operator:nth-of-type(2):target ~ .secondary-controls {
+    display: block;
+}
+.gallery .secondary-controls {
+  height: auto;
+  pointer-events: none;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  z-index: 2;
+}
+.gallery .secondary-controls a:nth-child(1) {
+    margin-left: 1em;
+}
+.gallery .secondary-controls a:nth-child(2) {
+    float: right;
+    margin-right: 0.2em;
+}
+.gallery .secondary-controls nav {
+    vertical-align: middle;
+}
+.gallery .secondary-controls a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    border-radius: 60px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 3em;
+    font-weight: bold;
+    height: 60px;
+    pointer-events: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+    width: 60px;
+}
+.gallery .secondary-controls a:hover {
+    transform: scale(1.1);
+}
+.gallery .secondary-controls a img {
+    margin-top: 0.1em;
+}
+.gallery .secondary-controls a:nth-child(1) {
+    float: left;
+    margin-left: 0.2em;
+}
+.gallery .secondary-controls a:nth-child(1) img {
+    margin-right: 0.1em;
+}
+.gallery .secondary-controls a:nth-child(2) {
+    float: right;
+    margin-right: 0.2em;
+}
+.gallery .secondary-controls a:nth-child(2) img {
+    margin-left: 0.1em;
+}
